@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { BOOKING_EXTERNAL_URL, SERVICES_DATA } from '@/lib/constants';
+import { BOOKING_EXTERNAL_URL } from '@/lib/constants';
 
 export function HeroSection() {
   return (
@@ -12,9 +12,9 @@ export function HeroSection() {
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="Ambiente da barbearia The Polished Blade"
-        fill
         quality={90}
         priority
+        fill
         className="z-0 object-cover"
         data-ai-hint="barbershop atmosphere"
       />
