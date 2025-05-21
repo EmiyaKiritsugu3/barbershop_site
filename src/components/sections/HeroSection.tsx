@@ -10,14 +10,17 @@ import { BOOKING_EXTERNAL_URL } from '@/lib/constants';
 export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* The parent <section> already has position: relative implicitly or through other means for 'fill' to work. 
+          If not, it should be added, but usually a top-level section like this is fine.
+          We are assuming the image will be placed in public/images/polished-blade-hero.jpg */}
       <Image
-        src="/images/polished-blade-hero.jpg" // Assuming this is the path
+        src="/images/polished-blade-hero.jpg" 
         alt="Ambiente da barbearia The Polished Blade"
         quality={90}
-        priority
-        fill
-        className="z-0 object-cover"
+        fill // 'layout="fill"' replacement
+        className="z-0 object-cover" // 'objectFit="cover"' replacement
         data-ai-hint="barbershop atmosphere"
+        priority // Good to keep for LCP image
       />
       <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Overlay */}
       
