@@ -18,7 +18,7 @@ export function WelcomeSection() {
             alt="Detalhe da barbearia"
             width={500}
             height={300}
-            className="rounded-lg shadow-xl"
+            className="rounded-lg shadow-xl object-cover"
             data-ai-hint="barbershop detail"
           />
         </div>
