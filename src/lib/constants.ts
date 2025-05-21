@@ -1,3 +1,4 @@
+
 import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/lib/types';
 import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
 
