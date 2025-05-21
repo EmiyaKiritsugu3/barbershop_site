@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Lora, Open_Sans } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -46,7 +48,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${lora.variable} ${openSans.variable} font-sans bg-background text-foreground antialiased`}>
-        {children}
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
         <Toaster />
       </body>
     </html>
