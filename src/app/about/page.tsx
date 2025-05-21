@@ -36,8 +36,8 @@ export default function AboutPage() {
             <Image
               src="https://placehold.co/600x400.png"
               alt={`Interior da barbearia ${SITE_NAME} antigamente`}
-              layout="fill"
-              objectFit="cover"
+              fill
+              className="object-cover"
               data-ai-hint="vintage barbershop"
             />
           </div>
@@ -50,8 +50,8 @@ export default function AboutPage() {
             <Image
               src="https://placehold.co/600x400.png"
               alt="Barbeiro aplicando espuma de barbear"
-              layout="fill"
-              objectFit="cover"
+              fill
+              className="object-cover"
               data-ai-hint="barber shaving foam"
             />
           </div>

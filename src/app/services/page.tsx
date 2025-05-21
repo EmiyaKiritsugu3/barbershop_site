@@ -75,9 +75,8 @@ export default function ServicesPage() {
               <Image
                 src={image.src}
                 alt={image.alt}
-                layout="fill"
-                objectFit="cover"
-                className="transform group-hover:scale-105 transition-transform duration-300"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-300"
                 data-ai-hint={image.dataAiHint || "hair style"}
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300 flex items-end p-4">

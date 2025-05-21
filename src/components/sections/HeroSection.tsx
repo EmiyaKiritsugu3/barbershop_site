@@ -12,11 +12,10 @@ export function HeroSection() {
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="Ambiente da barbearia The Polished Blade"
-        layout="fill"
-        objectFit="cover"
+        fill
         quality={90}
         priority
-        className="z-0"
+        className="z-0 object-cover"
         data-ai-hint="barbershop atmosphere"
       />
       <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Overlay */}
