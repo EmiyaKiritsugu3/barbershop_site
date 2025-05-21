@@ -28,7 +28,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
     id: '1',
     name: 'Thaynan Medeiros',
     role: 'Barbeiro / Co-fundador',
-    bio: 'Apaixonado pela arte da barbearia, Thaynan combina técnica e criatividade para oferecer cortes e estilos que realçam a individualidade de cada cliente.',
+    bio: 'Apaixonado pela arte da barbearia, Thaynan Medeiros combina técnica e criatividade para oferecer cortes e estilos que realçam a individualidade de cada cliente.',
     imageUrl: 'https://placehold.co/300x300.png',
     dataAiHint: 'male barber portrait',
     socialLinks: [{ platform: 'Instagram', url: '#', icon: Instagram }],
