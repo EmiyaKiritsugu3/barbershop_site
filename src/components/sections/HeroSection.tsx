@@ -5,28 +5,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { BOOKING_EXTERNAL_URL } from '@/lib/constants';
+import { BOOKING_EXTERNAL_URL, SITE_NAME } from '@/lib/constants';
 
 export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
-      {/* The parent <section> already has position: relative implicitly or through other means for 'fill' to work. 
-          If not, it should be added, but usually a top-level section like this is fine.
-          We are assuming the image will be placed in public/images/polished-blade-hero.jpg */}
       <Image
         src="/images/polished-blade-hero.jpg" 
-        alt="Ambiente da barbearia The Polished Blade"
+        alt={`Ambiente da barbearia ${SITE_NAME}`}
         quality={90}
-        fill // 'layout="fill"' replacement
-        className="z-0 object-cover" // 'objectFit="cover"' replacement
+        fill 
+        className="z-0 object-cover" 
         data-ai-hint="barbershop atmosphere"
-        priority // Good to keep for LCP image
+        priority 
       />
       <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Overlay */}
       
       <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 shadow-text animate-fade-in-up">
-          The Polished Blade
+          {SITE_NAME}
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl text-gray-200 shadow-text animate-fade-in-up animation-delay-300">
           Onde a tradição encontra a modernidade. Cortes impecáveis, barbas perfeitas e um estilo que define você.

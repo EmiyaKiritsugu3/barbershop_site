@@ -1,9 +1,11 @@
+
 import type { Metadata } from 'next';
 import { Lora, Open_Sans } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { SITE_NAME } from '@/lib/constants';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -20,21 +22,24 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'The Polished Blade Barbershop',
-  description: 'Premium barber services for the modern gentleman. Classic cuts, sharp shaves, and exceptional style.',
+  title: {
+    default: `${SITE_NAME} - Barbearia Premium`,
+    template: `%s - ${SITE_NAME}`,
+  },
+  description: `Serviços de barbearia premium na ${SITE_NAME}. Cortes clássicos, barbas afiadas e estilo excepcional.`,
   openGraph: {
-    title: 'The Polished Blade Barbershop',
-    description: 'Premium barber services for the modern gentleman. Classic cuts, sharp shaves, and exceptional style.',
+    title: `${SITE_NAME} - Barbearia Premium`,
+    description: `Serviços de barbearia premium na ${SITE_NAME}. Cortes clássicos, barbas afiadas e estilo excepcional.`,
     type: 'website',
-    locale: 'pt_BR', // Assuming Brazilian Portuguese as per user prompt context
-    url: 'https://your-polished-blade-url.com', // Replace with actual URL
-    siteName: 'The Polished Blade',
+    locale: 'pt_BR', 
+    url: 'https://your-thaynan-barber-url.com', // Replace with actual URL
+    siteName: SITE_NAME,
     // images: [ // Add a good default image for sharing
     //   {
-    //     url: 'https://your-polished-blade-url.com/og-image.jpg',
+    //     url: 'https://your-thaynan-barber-url.com/og-image.jpg',
     //     width: 1200,
     //     height: 630,
-    //     alt: 'The Polished Blade Barbershop',
+    //     alt: SITE_NAME,
     //   },
     // ],
   },

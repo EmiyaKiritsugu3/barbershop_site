@@ -1,3 +1,4 @@
+
 import { SectionWrapper } from '@/components/common/SectionWrapper';
 import { TeamMemberCard } from '@/components/common/TeamMemberCard';
 import { TEAM_MEMBERS_DATA, SITE_NAME } from '@/lib/constants';
@@ -26,10 +27,10 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-serif font-bold mb-6 text-primary">Nossa História</h2>
             <p className="text-muted-foreground mb-4">
-              Fundada em [Ano de Fundação], a {SITE_NAME} nasceu do sonho de resgatar a autêntica experiência da barbearia clássica, adaptando-a às necessidades e ao estilo do homem contemporâneo. Começamos com uma cadeira e uma visão: oferecer não apenas cortes e barbas, mas um momento de cuidado e bem-estar.
+              Fundada por Thaynan Medeiros em [Ano de Fundação], a {SITE_NAME} nasceu do seu sonho de criar um espaço único, resgatando a autêntica experiência da barbearia clássica e adaptando-a às necessidades do homem contemporâneo. O projeto começou com uma visão clara: oferecer não apenas cortes e barbas, mas um momento de cuidado e bem-estar.
             </p>
             <p className="text-muted-foreground">
-              Ao longo dos anos, crescemos e evoluímos, mas nossa essência permanece a mesma. Cada navalhada, cada corte de tesoura, é executado com a precisão e a paixão que nos definem.
+              Com o tempo, Felipe Medeiros, seu irmão, juntou-se à barbearia, fortalecendo a equipe e a dedicação ao atendimento de excelência. Ao longo dos anos, a {SITE_NAME} cresceu e evoluiu, mas sua essência permanece a mesma. Cada navalhada, cada corte de tesoura, é executado com a precisão e a paixão que nos definem.
             </p>
           </div>
           <div className="relative h-80 md:h-96 rounded-lg shadow-xl overflow-hidden">

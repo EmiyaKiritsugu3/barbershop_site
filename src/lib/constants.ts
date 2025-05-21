@@ -2,8 +2,8 @@
 import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/lib/types';
 import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
 
-export const SITE_NAME = "The Polished Blade";
-export const BOOKING_WHATSAPP_URL = "https://wa.me/5584998138992?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20The%20Polished%20Blade.%0A%0AServi%C3%A7o%3A%20%5BQual%20servi%C3%A7o%3F%5D%0ADia%3A%20%5BQual%20dia%3F%5D%0AHor%C3%A1rio%3A%20%5BQual%20hor%C3%A1rio%3F%5D";
+export const SITE_NAME = "Thaynan Barber";
+export const BOOKING_WHATSAPP_URL = "https://wa.me/5584998138992?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Thaynan%20Barber.%0A%0AServi%C3%A7o%3A%20%5BQual%20servi%C3%A7o%3F%5D%0ADia%3A%20%5BQual%20dia%3F%5D%0AHor%C3%A1rio%3A%20%5BQual%20hor%C3%A1rio%3F%5D";
 export const BOOKING_EXTERNAL_URL = "https://calendly.com/inamarjunior2";
 
 export const NAV_LINKS: NavItem[] = [
@@ -27,8 +27,8 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
   {
     id: '1',
     name: 'Thaynan Medeiros',
-    role: 'Barbeiro / Co-fundador',
-    bio: 'Apaixonado pela arte da barbearia, Thaynan Medeiros combina técnica e criatividade para oferecer cortes e estilos que realçam a individualidade de cada cliente.',
+    role: 'Fundador e Barbeiro',
+    bio: 'Fundador da Thaynan Barber, Thaynan Medeiros é apaixonado pela arte da barbearia, combinando técnica e criatividade para oferecer cortes e estilos que realçam a individualidade de cada cliente.',
     imageUrl: 'https://placehold.co/300x300.png',
     dataAiHint: 'male barber portrait',
     socialLinks: [{ platform: 'Instagram', url: '#', icon: Instagram }],
@@ -36,8 +36,8 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
   {
     id: '2',
     name: 'Felipe Medeiros',
-    role: 'Barbeiro / Co-fundador',
-    bio: 'Com um olhar atento aos detalhes e dedicação à satisfação do cliente, Felipe é especialista em criar visuais impecáveis e proporcionar uma experiência de primeira.',
+    role: 'Barbeiro',
+    bio: 'Irmão de Thaynan, Felipe Medeiros juntou-se à Thaynan Barber trazendo sua dedicação e habilidade. Com um olhar atento aos detalhes, é especialista em criar visuais impecáveis.',
     imageUrl: 'https://placehold.co/300x300.png',
     dataAiHint: 'male barber stylish',
     socialLinks: [{ platform: 'Instagram', url: '#', icon: Instagram }],
@@ -53,7 +53,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
 export const GALLERY_IMAGES_DATA: GalleryImage[] = [
   { id: '1', src: 'https://placehold.co/600x400.png', alt: 'Corte de cabelo masculino moderno', category: 'Cortes', dataAiHint: 'mens haircut' },
   { id: '2', src: 'https://placehold.co/600x400.png', alt: 'Barba bem aparada e modelada', category: 'Barbas', dataAiHint: 'beard style' },
-  { id: '3', src: 'https://placehold.co/600x400.png', alt: 'Interior da barbearia The Polished Blade', category: 'Ambiente', dataAiHint: 'barbershop interior' },
+  { id: '3', src: 'https://placehold.co/600x400.png', alt: 'Interior da barbearia', category: 'Ambiente', dataAiHint: 'barbershop interior' },
   { id: '4', src: 'https://placehold.co/600x400.png', alt: 'Barbeiro trabalhando em um cliente', category: 'Ação', dataAiHint: 'barber working' },
   { id: '5', src: 'https://placehold.co/600x400.png', alt: 'Detalhe de um corte degradê', category: 'Cortes', dataAiHint: 'fade haircut' },
   { id: '6', src: 'https://placehold.co/600x400.png', alt: 'Produtos de barbearia de alta qualidade', category: 'Produtos', dataAiHint: 'barber products' },
@@ -68,13 +68,14 @@ export const STYLE_SUGGESTION_GALLERY_URLS: string[] = GALLERY_IMAGES_DATA.map(i
 export const CONTACT_INFO = {
   address: "Rua das Tesouras Afiadas, 123, Bairro Nobre, Cidade Elegante - CEP 01234-567",
   phone: "(11) 98765-4321",
-  email: "contato@thepolishedblade.com",
+  email: "contato@thaynanbarber.com", // Updated email
   workingHours: "Segunda a Sexta: 9h - 20h | Sábado: 9h - 18h",
   socialMedia: [
-    { name: "Instagram", url: "https://instagram.com/thepolishedblade", icon: Instagram },
-    { name: "Facebook", url: "https://facebook.com/thepolishedblade", icon: Facebook },
+    { name: "Instagram", url: "https://instagram.com/thaynanbarber", icon: Instagram }, // Updated social link
+    { name: "Facebook", url: "https://facebook.com/thaynanbarber", icon: Facebook }, // Updated social link
   ],
   mapPinIcon: MapPin,
   phoneIcon: Phone,
   mailIcon: Mail,
 };
+

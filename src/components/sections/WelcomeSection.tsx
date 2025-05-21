@@ -1,14 +1,16 @@
+
 import { SectionWrapper } from '@/components/common/SectionWrapper';
 import Image from 'next/image';
+import { SITE_NAME } from '@/lib/constants';
 
 export function WelcomeSection() {
   return (
     <SectionWrapper className="bg-background">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-4xl font-serif font-bold mb-6 text-primary">Bem-vindo à The Polished Blade</h2>
+          <h2 className="text-4xl font-serif font-bold mb-6 text-primary">Bem-vindo à {SITE_NAME}</h2>
           <p className="text-lg text-muted-foreground mb-4">
-            Na The Polished Blade, combinamos a arte tradicional da barbearia com um toque moderno e sofisticado. Nossa paixão é realçar a individualidade de cada cliente, oferecendo cortes precisos, barbas impecáveis e um atendimento que excede expectativas.
+            Na {SITE_NAME}, combinamos a arte tradicional da barbearia com um toque moderno e sofisticado. Nossa paixão é realçar a individualidade de cada cliente, oferecendo cortes precisos, barbas impecáveis e um atendimento que excede expectativas.
           </p>
           <p className="text-lg text-muted-foreground mb-6">
             Entre em nosso espaço, relaxe e deixe que nossos barbeiros experientes cuidem do seu estilo. Aqui, cada detalhe é pensado para proporcionar uma experiência única e revigorante.
