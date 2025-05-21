@@ -66,7 +66,7 @@ export const STYLE_SUGGESTION_GALLERY_URLS: string[] = GALLERY_IMAGES_DATA.map(i
 
 
 export const CONTACT_INFO = {
-  address: "Rua das Tesouras Afiadas, 123, Bairro Nobre, Cidade Elegante - CEP 01234-567",
+  address: "Av. Fundador Francisco Quinino de Medeiros, 33 - Centro, Ipueira - RN, 59315-000",
   phone: "(11) 98765-4321",
   email: "contato@thaynanbarber.com", // Updated email
   workingHours: "Segunda a Sexta: 9h - 20h | Sábado: 9h - 18h",
@@ -78,4 +78,3 @@ export const CONTACT_INFO = {
   phoneIcon: Phone,
   mailIcon: Mail,
 };
-
