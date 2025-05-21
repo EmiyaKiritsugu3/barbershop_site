@@ -26,9 +26,8 @@ export function WelcomeSection() {
            <Image
             src="https://placehold.co/600x750.png"
             alt="Barbeiro habilidoso em ação"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            fill
+            className="rounded-lg object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-ai-hint="skilled barber"
           />
         </div>

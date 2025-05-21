@@ -74,13 +74,13 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-serif font-bold mb-4 text-primary">Nossa Localização</h2>
-              <div className="aspect-video w-full rounded-lg shadow-lg overflow-hidden border-2 border-accent">
+              <div className="relative aspect-video w-full rounded-lg shadow-lg overflow-hidden border-2 border-accent">
                 {/* Placeholder for Google Maps Embed. Replace with actual iframe or interactive map component */}
                 <Image 
                   src="https://placehold.co/600x400.png" 
                   alt="Mapa da localização da barbearia" 
-                  layout="fill" 
-                  objectFit="cover"
+                  fill
+                  className="object-cover"
                   data-ai-hint="city map"
                 />
               </div>

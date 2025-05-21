@@ -15,9 +15,8 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
           <Image
             src={member.imageUrl}
             alt={member.name}
-            layout="fill"
-            objectFit="cover"
-            className=""
+            fill
+            className="object-cover"
             data-ai-hint={member.dataAiHint || "portrait photo"}
           />
         </div>

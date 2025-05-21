@@ -54,11 +54,9 @@ export function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: Ligh
            <Image
             src={currentImage.src}
             alt={currentImage.alt}
-            layout="intrinsic" // Use intrinsic for better sizing within the constrained area
-            width={1600} // Provide large base width
-            height={1200} // Provide large base height
-            objectFit="contain" // Ensure the whole image is visible
-            className="rounded-lg shadow-2xl"
+            width={1600} 
+            height={1200} 
+            className="rounded-lg shadow-2xl object-contain"
             data-ai-hint={currentImage.dataAiHint || "gallery image"}
           />
         )}

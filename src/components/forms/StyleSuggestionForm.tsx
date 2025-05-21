@@ -102,7 +102,7 @@ export function StyleSuggestionForm() {
                 <div className="space-y-1 text-center">
                   {uploadedPhotoUri ? (
                     <div className="relative w-48 h-48 mx-auto mb-2">
-                       <Image src={uploadedPhotoUri} alt="Foto enviada" layout="fill" objectFit="cover" className="rounded-md shadow-md" />
+                       <Image src={uploadedPhotoUri} alt="Foto enviada" fill className="rounded-md shadow-md object-cover" />
                     </div>
                   ) : (
                     <ImageIcon className="mx-auto h-16 w-16 text-muted-foreground" />
@@ -154,7 +154,7 @@ export function StyleSuggestionForm() {
             {suggestedStyles.map((styleUrl, index) => (
               <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="relative aspect-square w-full">
-                  <Image src={styleUrl} alt={getGalleryImageAlt(styleUrl) || `Estilo sugerido ${index + 1}`} layout="fill" objectFit="cover" data-ai-hint="hairstyle suggestion"/>
+                  <Image src={styleUrl} alt={getGalleryImageAlt(styleUrl) || `Estilo sugerido ${index + 1}`} fill className="object-cover" data-ai-hint="hairstyle suggestion"/>
                 </div>
                 <CardContent className="p-4 text-center">
                   <p className="text-sm text-muted-foreground">{getGalleryImageAlt(styleUrl) || `Sugestão ${index + 1}`}</p>
