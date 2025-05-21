@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from 'next/image';
@@ -10,7 +11,7 @@ export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="/images/polished-blade-hero.jpg" // Assuming this is the path
         alt="Ambiente da barbearia The Polished Blade"
         quality={90}
         priority
