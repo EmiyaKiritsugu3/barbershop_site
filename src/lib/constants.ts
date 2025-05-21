@@ -3,7 +3,7 @@ import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Ins
 
 export const SITE_NAME = "The Polished Blade";
 export const BOOKING_WHATSAPP_URL = "https://wa.me/YOUR_PHONE_NUMBER"; // Replace with actual WhatsApp link
-export const BOOKING_EXTERNAL_URL = "https://calendly.com/your-link"; // Replace with actual booking platform link
+export const BOOKING_EXTERNAL_URL = "https://calendly.com/inamarjunior2/agendamento-na-the-polished-blade"; // User's Calendly link
 
 export const NAV_LINKS: NavItem[] = [
   { href: '/', label: 'Home', icon: Home },
