@@ -2,8 +2,8 @@ import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/
 import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
 
 export const SITE_NAME = "The Polished Blade";
-export const BOOKING_WHATSAPP_URL = "https://wa.me/YOUR_PHONE_NUMBER"; // Replace with actual WhatsApp link
-export const BOOKING_EXTERNAL_URL = "https://calendly.com/inamarjunior2"; // User's main Calendly page
+export const BOOKING_WHATSAPP_URL = "https://wa.me/5584998138992?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20The%20Polished%20Blade.%0A%0AServi%C3%A7o%3A%20%5BQual%20servi%C3%A7o%3F%5D%0ADia%3A%20%5BQual%20dia%3F%5D%0AHor%C3%A1rio%3A%20%5BQual%20hor%C3%A1rio%3F%5D";
+export const BOOKING_EXTERNAL_URL = "https://calendly.com/inamarjunior2";
 
 export const NAV_LINKS: NavItem[] = [
   { href: '/', label: 'Home', icon: Home },
