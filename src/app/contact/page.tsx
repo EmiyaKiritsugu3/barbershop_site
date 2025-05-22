@@ -1,6 +1,6 @@
+
 import { SectionWrapper } from '@/components/common/SectionWrapper';
 import { CONTACT_INFO, SITE_NAME, BOOKING_WHATSAPP_URL, BOOKING_EXTERNAL_URL } from '@/lib/constants';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
@@ -75,14 +75,17 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-serif font-bold mb-4 text-primary">Nossa Localização</h2>
               <div className="relative aspect-video w-full rounded-lg shadow-lg overflow-hidden border-2 border-accent">
-                {/* Placeholder for Google Maps Embed. Replace with actual iframe or interactive map component */}
-                <Image 
-                  src="https://placehold.co/600x400.png" 
-                  alt="Mapa da localização da barbearia" 
-                  fill
-                  className="object-cover"
-                  data-ai-hint="city map"
-                />
+                <iframe
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(CONTACT_INFO.address)}&hl=pt-BR&z=16&ie=UTF8&iwloc=&output=embed`}
+                  width="100%"
+                  height="100%"
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{ border:0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Mapa da localização da ${SITE_NAME}`}
+                ></iframe>
               </div>
             </div>
             
