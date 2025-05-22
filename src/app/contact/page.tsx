@@ -76,7 +76,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-serif font-bold mb-4 text-primary">Nossa Localização</h2>
               <div className="relative aspect-video w-full rounded-lg shadow-lg overflow-hidden border-2 border-accent">
                 <iframe
-                  src={`https://maps.google.com/maps?q=${encodeURIComponent(`${SITE_NAME}, ${CONTACT_INFO.address}`)}&hl=pt-BR&z=16&ie=UTF8&iwloc=B&output=embed`}
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(`${SITE_NAME}, ${CONTACT_INFO.address}`)}&hl=pt-BR&z=16&ie=UTF8&iwloc=B&output=embed&t=k`}
                   width="100%"
                   height="100%"
                   className="absolute top-0 left-0 w-full h-full"
