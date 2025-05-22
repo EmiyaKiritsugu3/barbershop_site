@@ -46,7 +46,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
   { id: '1', name: 'João M.', text: 'Melhor barbearia da cidade! Profissionais de primeira e ambiente muito agradável.', avatarUrl: 'https://placehold.co/100x100.png', dataAiHint: 'man smiling' },
-  { id: '2', name: 'Pedro L.', text: 'O Arthur é um artista com a navalha. Minha barba nunca esteve tão bem cuidada. Recomendo!', avatarUrl: 'https://placehold.co/100x100.png', dataAiHint: 'happy customer' },
+  { id: '2', name: 'Pedro L.', text: 'O Felipe é um artista com a navalha. Minha barba nunca esteve tão bem cuidada. Recomendo!', avatarUrl: 'https://placehold.co/100x100.png', dataAiHint: 'happy customer' },
   { id: '3', name: 'Lucas S.', text: 'Ambiente top, serviço de qualidade e preço justo. Virei cliente fiel.', avatarUrl: 'https://placehold.co/100x100.png', dataAiHint: 'client portrait' },
 ];
 
@@ -68,11 +68,11 @@ export const STYLE_SUGGESTION_GALLERY_URLS: string[] = GALLERY_IMAGES_DATA.map(i
 export const CONTACT_INFO = {
   address: "Av. Fundador Francisco Quinino de Medeiros, 33 - Centro, Ipueira - RN, 59315-000",
   phone: "(11) 98765-4321",
-  email: "contato@thaynanbarber.com", // Updated email
+  email: "contato@thaynanbarber.com",
   workingHours: "Segunda a Sexta: 9h - 20h | Sábado: 9h - 18h",
   socialMedia: [
-    { name: "Instagram", url: "https://instagram.com/thaynanbarber", icon: Instagram }, // Updated social link
-    { name: "Facebook", url: "https://facebook.com/thaynanbarber", icon: Facebook }, // Updated social link
+    { name: "Instagram", url: "https://instagram.com/thaynanbarber", icon: Instagram },
+    { name: "Facebook", url: "https://facebook.com/thaynanbarber", icon: Facebook },
   ],
   mapPinIcon: MapPin,
   phoneIcon: Phone,

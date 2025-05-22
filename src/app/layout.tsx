@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: `Serviços de barbearia premium na ${SITE_NAME}. Cortes clássicos, barbas afiadas e estilo excepcional.`,
     type: 'website',
     locale: 'pt_BR', 
-    url: 'https://your-thaynan-barber-url.com', // Replace with actual URL
+    url: 'https://thaynanbarber.com', // Replace with actual URL
     siteName: SITE_NAME,
     // images: [ // Add a good default image for sharing
     //   {
