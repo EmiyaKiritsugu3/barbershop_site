@@ -1,7 +1,7 @@
 
 import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/lib/types';
 import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
-import type { SVGProps } from 'react';
+import StraightRazorIcon from '@/components/common/StraightRazorIcon'; // Import the new icon component
 
 export const SITE_NAME = "Thaynan Barber";
 export const FOUNDATION_YEAR = "2023";
@@ -18,27 +18,9 @@ export const NAV_LINKS: NavItem[] = [
   { href: '/contact', label: 'Contato', icon: MessageSquare },
 ];
 
-const StraightRazorIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M6.22,9.39,4.64,10.97l-1.41,1.41a2.34,2.34,0,0,0,0,3.31h0a2.34,2.34,0,0,0,3.31,0l1.41-1.41,1.58-1.58" />
-    <path d="M21.12,9.37,9.46,21.03a1,1,0,0,1-1.41,0l-1.15-1.15a1,1,0,0,1,0-1.41L18.63,6.8ZM13.83,2.88l-4.24,4.24" />
-  </svg>
-);
-
 export const SERVICES_DATA: Service[] = [
   { id: '1', name: 'Corte Masculino Clássico', description: 'Corte tradicional na tesoura e máquina, finalizado com produtos de alta qualidade.', price: 'R$ 50', icon: Scissors },
-  { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Briefcase },
+  { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Briefcase }, // Reverted to Briefcase
   { id: '3', name: 'Combo Corte + Barba', description: 'Serviço completo de corte de cabelo e barba modelada para um visual impecável.', price: 'R$ 80', icon: Scissors },
   { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: StraightRazorIcon },
   { id: '5', name: 'Acabamento (Pezinho)', description: 'Manutenção do contorno do corte, ideal entre cortes completos.', price: 'R$ 25', icon: Scissors },
@@ -98,3 +80,7 @@ export const CONTACT_INFO = {
   phoneIcon: Phone,
   mailIcon: Mail,
 };
+
+// Open Graph Image for SEO
+export const OG_IMAGE_URL = "https://placehold.co/1200x630.png"; // Replace with your actual OG image URL
+
