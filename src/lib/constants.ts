@@ -1,7 +1,12 @@
 
 import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/lib/types';
 import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
-import StraightRazorIcon from '@/components/common/StraightRazorIcon'; // Import the new icon component
+import type { SVGProps } from 'react';
+
+// If you decide to use StraightRazorIcon again in the future,
+// ensure the StraightRazorIcon.tsx component exists and is imported correctly.
+// import { StraightRazorIcon } from '@/components/common/StraightRazorIcon';
+
 
 export const SITE_NAME = "Thaynan Barber";
 export const FOUNDATION_YEAR = "2023";
@@ -20,9 +25,9 @@ export const NAV_LINKS: NavItem[] = [
 
 export const SERVICES_DATA: Service[] = [
   { id: '1', name: 'Corte Masculino Clássico', description: 'Corte tradicional na tesoura e máquina, finalizado com produtos de alta qualidade.', price: 'R$ 50', icon: Scissors },
-  { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Briefcase }, // Reverted to Briefcase
+  { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Briefcase },
   { id: '3', name: 'Combo Corte + Barba', description: 'Serviço completo de corte de cabelo e barba modelada para um visual impecável.', price: 'R$ 80', icon: Scissors },
-  { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: StraightRazorIcon },
+  { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: Briefcase }, // Reverted to Briefcase
   { id: '5', name: 'Acabamento (Pezinho)', description: 'Manutenção do contorno do corte, ideal entre cortes completos.', price: 'R$ 25', icon: Scissors },
 ];
 
@@ -81,6 +86,5 @@ export const CONTACT_INFO = {
   mailIcon: Mail,
 };
 
-// Open Graph Image for SEO
-export const OG_IMAGE_URL = "https://placehold.co/1200x630.png"; // Replace with your actual OG image URL
-
+// Open Graph Image for SEO - Certifique-se de criar este arquivo em /public/og-image.png ou atualize o caminho
+export const OG_IMAGE_URL = "/og-image.png";
