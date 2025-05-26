@@ -8,7 +8,7 @@ Bem-vindo ao repositório do **Thaynan Barber**, um site moderno e elegante para
 <!-- (Opcional: Adicione um screenshot ou GIF do projeto aqui) -->
 <!-- Ex: ![Thaynan Barber Screenshot](link_para_seu_screenshot.png) -->
 
-**[Link para a Demo ao Vivo (Placeholder)](https://SEU_LINK_DE_DEPLOY_AQUI.com)**
+**[Link para a Demo ao Vivo](https://barbershop-site-one.vercel.app/)**
 
 ## Sumário
 - [Funcionalidades](#funcionalidades)
@@ -67,11 +67,12 @@ Siga estas instruções para obter uma cópia do projeto rodando na sua máquina
 ### Configuração
 
 1.  **Clone o repositório:**
+    No GitHub, você pode clonar o repositório usando a URL fornecida na página principal do repositório.
     ```bash
     git clone https://github.com/SEU_USUARIO/NOME_DO_SEU_REPOSITORIO.git 
-    # Ou use a URL do seu repositório
     cd NOME_DO_SEU_REPOSITORIO
     ```
+    (Substitua `SEU_USUARIO/NOME_DO_SEU_REPOSITORIO` pelo caminho correto do seu repositório)
 
 2.  **Instale as dependências:**
     ```bash
@@ -84,7 +85,7 @@ Siga estas instruções para obter uma cópia do projeto rodando na sua máquina
 
 3.  **Configure as Variáveis de Ambiente:**
     Crie um arquivo chamado `.env` na raiz do seu projeto. Este arquivo é ignorado pelo Git (graças ao `.gitignore`) e é usado para armazenar chaves de API e outras variáveis sensíveis.
-    Copie o conteúdo de `.env.example` (se existir) ou adicione o seguinte:
+    Copie o conteúdo de `.env.example` (se existir, caso contrário, crie o arquivo `.env` com o seguinte conteúdo):
 
     ```env
     # .env
@@ -94,7 +95,7 @@ Siga estas instruções para obter uma cópia do projeto rodando na sua máquina
     # Certifique-se de que a API "Vertex AI" ou "Generative Language" esteja ativa no seu projeto Google Cloud.
     GOOGLE_API_KEY=SUA_CHAVE_DE_API_DO_GOOGLE_AQUI
     ```
-    **Importante:** Nunca comite seu arquivo `.env` para o repositório.
+    **Importante:** Nunca comite seu arquivo `.env` para o repositório. O arquivo `.gitignore` já está configurado para ignorá-lo.
 
 ### Rodando o Servidor de Desenvolvimento
 
@@ -149,9 +150,8 @@ Contribuições são bem-vindas! Se você tem sugestões de melhorias ou encontr
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes (se você adicionar um arquivo LICENSE.md).
-```
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE.md` para mais detalhes (se você adicionar um arquivo LICENSE.md).
+Caso não exista um arquivo `LICENSE.md`, considera-se o uso da licença MIT como padrão para este projeto.
 
-```
+---
 Obrigado por usar o Firebase Studio!
-```
