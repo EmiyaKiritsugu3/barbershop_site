@@ -14,12 +14,11 @@ export const StraightRazorIcon = (props: SVGProps<SVGSVGElement>) => (
     strokeLinejoin="round"
     {...props}
   >
-    {/* Representa o cabo da navalha */}
-    <rect x="3" y="8" width="8" height="8" rx="1" ry="1" />
-    {/* Representa a lâmina (simplificada, como se estivesse fechada/alinhada) */}
-    <line x1="11" y1="12" x2="20" y2="12" />
-     {/* Pequeno detalhe para o pino/dobradiça */}
-    <circle cx="10.5" cy="12" r="0.5" fill="currentColor" stroke="none" />
+    <path d="M4 20L8 4" />
+    <path d="M8 4L20 4" />
+    <path d="M8 8L20 8" />
+    <path d="M8 12L20 12" />
+    <path d="M8 16L20 16" />
   </svg>
 );
 
