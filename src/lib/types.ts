@@ -1,11 +1,13 @@
+
 import type { LucideIcon } from 'lucide-react';
+import type { SVGProps } from 'react';
 
 export interface Service {
   id: string;
   name: string;
   description: string;
   price: string;
-  icon?: LucideIcon;
+  icon?: React.ComponentType<SVGProps<SVGSVGElement>> | LucideIcon;
 }
 
 export interface TeamMember {
@@ -31,7 +33,7 @@ export interface GalleryImage {
   src: string;
   alt: string;
   dataAiHint?: string;
-  category?: string; 
+  category?: string;
 }
 
 export interface NavItem {
