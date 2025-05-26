@@ -11,8 +11,8 @@ export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="/images/thaynan-barber-hero.jpg"
-        alt={`Ambiente interno da ${SITE_NAME}, mostrando cadeiras de barbeiro e decoração clássica`}
+        src="/images/polished-blade-hero.jpg" 
+        alt={`Ambiente interno da barbearia ${SITE_NAME}, mostrando cadeiras de barbeiro e decoração clássica.`}
         quality={90}
         fill
         className="z-0 object-cover"

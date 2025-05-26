@@ -2,14 +2,11 @@
 import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/lib/types';
 import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
 import type { SVGProps } from 'react';
-
-// If you decide to use StraightRazorIcon again in the future,
-// ensure the StraightRazorIcon.tsx component exists and is imported correctly.
-// import { StraightRazorIcon } from '@/components/common/StraightRazorIcon';
+import { StraightRazorIcon } from '@/components/common/StraightRazorIcon';
 
 
 export const SITE_NAME = "Thaynan Barber";
-export const FOUNDATION_YEAR = "2023";
+export const FOUNDATION_YEAR = "2023"; // Ajuste este ano conforme necessário
 
 export const BOOKING_WHATSAPP_URL = "https://wa.me/5584998138992?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Thaynan%20Barber.%0A%0AServi%C3%A7o%3A%20%5BQual%20servi%C3%A7o%3F%5D%0ADia%3A%20%5BQual%20dia%3F%5D%0AHor%C3%A1rio%3A%20%5BQual%20hor%C3%A1rio%3F%5D";
 export const BOOKING_EXTERNAL_URL = "https://calendly.com/inamarjunior2";
@@ -27,7 +24,7 @@ export const SERVICES_DATA: Service[] = [
   { id: '1', name: 'Corte Masculino Clássico', description: 'Corte tradicional na tesoura e máquina, finalizado com produtos de alta qualidade.', price: 'R$ 50', icon: Scissors },
   { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Briefcase },
   { id: '3', name: 'Combo Corte + Barba', description: 'Serviço completo de corte de cabelo e barba modelada para um visual impecável.', price: 'R$ 80', icon: Scissors },
-  { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: Briefcase }, // Reverted to Briefcase
+  { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: Briefcase },
   { id: '5', name: 'Acabamento (Pezinho)', description: 'Manutenção do contorno do corte, ideal entre cortes completos.', price: 'R$ 25', icon: Scissors },
 ];
 
@@ -61,7 +58,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
 export const GALLERY_IMAGES_DATA: GalleryImage[] = [
   { id: '1', src: 'https://placehold.co/600x400.png', alt: 'Corte de cabelo masculino moderno', category: 'Cortes', dataAiHint: 'mens haircut' },
   { id: '2', src: 'https://placehold.co/600x400.png', alt: 'Barba bem aparada e modelada', category: 'Barbas', dataAiHint: 'beard style' },
-  { id: '3', src: '/images/thaynan-barber-hero.jpg', alt: 'Interior da barbearia Thaynan Barber', category: 'Ambiente', dataAiHint: 'barbershop interior' },
+  { id: '3', src: '/images/polished-blade-hero.jpg', alt: 'Interior da barbearia Thaynan Barber', category: 'Ambiente', dataAiHint: 'barbershop interior' },
   { id: '4', src: 'https://placehold.co/600x400.png', alt: 'Barbeiro trabalhando em um cliente', category: 'Ação', dataAiHint: 'barber working' },
   { id: '5', src: 'https://placehold.co/600x400.png', alt: 'Detalhe de um corte degradê', category: 'Cortes', dataAiHint: 'fade haircut' },
   { id: '6', src: 'https://placehold.co/600x400.png', alt: 'Produtos de barbearia de alta qualidade', category: 'Produtos', dataAiHint: 'barber products' },
