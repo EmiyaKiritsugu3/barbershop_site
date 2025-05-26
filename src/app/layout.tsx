@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { SITE_NAME } from '@/lib/constants';
+import { SITE_NAME, OG_IMAGE_URL } from '@/lib/constants'; // Import OG_IMAGE_URL
 
 const lora = Lora({
   subsets: ['latin'],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     images: [
       {
-        url: `${siteUrl}/og-image.png`, // Replace with your actual OG image URL or path to a static image in /public
+        url: `${siteUrl}${OG_IMAGE_URL}`, // Usa a constante OG_IMAGE_URL
         width: 1200,
         height: 630,
         alt: `${SITE_NAME} - Barbearia Premium`,
