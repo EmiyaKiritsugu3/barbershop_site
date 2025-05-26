@@ -1,4 +1,3 @@
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependencies
@@ -12,6 +11,7 @@
 # Next.js
 /.next/
 /out/
+*.tsbuildinfo
 
 # Production
 /build
@@ -20,12 +20,6 @@
 .DS_Store
 *.pem
 
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
 # Local Environment Variables
 .env
 .env*.local
@@ -33,12 +27,29 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 
-# Turborepo
-.turbo
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
 
-# Vercel
-.vercel
+# Editor directories and files
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
+# Firebase
+.firebase
+firebase-debug.log*
+
+# Genkit
+.genkit/cache
+.genkit/state
