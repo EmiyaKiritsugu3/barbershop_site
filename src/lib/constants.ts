@@ -1,9 +1,9 @@
 
 import type { NavItem, Service, TeamMember, Testimonial, GalleryImage } from '@/lib/types';
-import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, UserCircle, Wind } from 'lucide-react';
+import { Home, Info, Scissors, Camera, MessageSquare, Sparkles, Users, Star, Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Briefcase } from 'lucide-react';
 
 export const SITE_NAME = "Thaynan Barber";
-export const FOUNDATION_YEAR = "2023"; // Example year, update as needed
+export const FOUNDATION_YEAR = "2023";
 
 export const BOOKING_WHATSAPP_URL = "https://wa.me/5584998138992?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Thaynan%20Barber.%0A%0AServi%C3%A7o%3A%20%5BQual%20servi%C3%A7o%3F%5D%0ADia%3A%20%5BQual%20dia%3F%5D%0AHor%C3%A1rio%3A%20%5BQual%20hor%C3%A1rio%3F%5D";
 export const BOOKING_EXTERNAL_URL = "https://calendly.com/inamarjunior2";
@@ -19,9 +19,9 @@ export const NAV_LINKS: NavItem[] = [
 
 export const SERVICES_DATA: Service[] = [
   { id: '1', name: 'Corte Masculino Clássico', description: 'Corte tradicional na tesoura e máquina, finalizado com produtos de alta qualidade.', price: 'R$ 50', icon: Scissors },
-  { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Sparkles },
+  { id: '2', name: 'Barba Modelada', description: 'Design e modelagem da barba, com toalha quente e navalha para contornos precisos.', price: 'R$ 40', icon: Briefcase },
   { id: '3', name: 'Combo Corte + Barba', description: 'Serviço completo de corte de cabelo e barba modelada para um visual impecável.', price: 'R$ 80', icon: Scissors },
-  { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: UserCircle },
+  { id: '4', name: 'Raspar Cabeça (Navalha)', description: 'Cabeça raspada com navalha, incluindo toalha quente e produtos pós-barba.', price: 'R$ 45', icon: Briefcase },
   { id: '5', name: 'Acabamento (Pezinho)', description: 'Manutenção do contorno do corte, ideal entre cortes completos.', price: 'R$ 25', icon: Scissors },
 ];
 
@@ -33,7 +33,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
     bio: `Fundador da ${SITE_NAME}, Thaynan Medeiros é apaixonado pela arte da barbearia, combinando técnica e criatividade para oferecer cortes e estilos que realçam a individualidade de cada cliente.`,
     imageUrl: 'https://placehold.co/300x300.png',
     dataAiHint: 'male barber portrait',
-    socialLinks: [{ platform: 'Instagram', url: '#', icon: Instagram }],
+    socialLinks: [{ platform: 'Instagram', url: 'https://instagram.com/thaynanbarber', icon: Instagram }],
   },
   {
     id: '2',
