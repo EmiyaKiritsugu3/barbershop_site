@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 import { Lora, Open_Sans } from 'next/font/google';
 import './globals.css';
@@ -21,6 +20,8 @@ const openSans = Open_Sans({
   display: 'swap',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://thaynanbarber.com'; // Replace with actual URL or use env var
+
 export const metadata: Metadata = {
   title: {
     default: `${SITE_NAME} - Barbearia Premium`,
@@ -31,18 +32,24 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} - Barbearia Premium`,
     description: `Serviços de barbearia premium na ${SITE_NAME}. Cortes clássicos, barbas afiadas e estilo excepcional.`,
     type: 'website',
-    locale: 'pt_BR', 
-    url: 'https://thaynanbarber.com', // Replace with actual URL
+    locale: 'pt_BR',
+    url: siteUrl,
     siteName: SITE_NAME,
-    // images: [ // Add a good default image for sharing
-    //   {
-    //     url: 'https://your-thaynan-barber-url.com/og-image.jpg',
-    //     width: 1200,
-    //     height: 630,
-    //     alt: SITE_NAME,
-    //   },
-    // ],
+    images: [
+      {
+        url: `${siteUrl}/og-image.png`, // Replace with your actual OG image URL or path to a static image in /public
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} - Barbearia Premium`,
+      },
+    ],
   },
+  // twitter: { // Optional: Add Twitter specific card data if desired
+  //   card: 'summary_large_image',
+  //   title: `${SITE_NAME} - Barbearia Premium`,
+  //   description: `Serviços de barbearia premium na ${SITE_NAME}.`,
+  //   images: [`${siteUrl}/twitter-image.png`], // Replace with your actual Twitter image URL
+  // },
 };
 
 export default function RootLayout({

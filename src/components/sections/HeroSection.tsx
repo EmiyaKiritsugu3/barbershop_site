@@ -11,16 +11,16 @@ export function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="/images/polished-blade-hero.jpg" 
-        alt={`Ambiente da barbearia ${SITE_NAME}`}
+        src="/images/thaynan-barber-hero.jpg"
+        alt={`Ambiente interno da ${SITE_NAME}, mostrando cadeiras de barbeiro e decoração clássica`}
         quality={90}
-        fill 
-        className="z-0 object-cover" 
+        fill
+        className="z-0 object-cover"
         data-ai-hint="barbershop atmosphere"
-        priority 
+        priority
       />
       <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Overlay */}
-      
+
       <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 shadow-text animate-fade-in-up">
           {SITE_NAME}
